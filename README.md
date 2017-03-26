@@ -1,10 +1,10 @@
 # Docker image of Wordpress (Tag php7.1) with LDAP support
-This images stays up to date with the original one but with LDAP support.
+This images stays up to date with the original one but with LDAP support. Enjoy.
 
-Just added this code snippet as suggested by https://github.com/tianon, Wordpress official image mantainer:
+Just added this code snippet as suggested by https://github.com/tianon, Wordpress official image mantainer with modification for tag php7.1
 
 ````
-FROM wordpress
+FROM wordpress:php7.1
 
 RUN set -x \
 	&& apt-get update \
@@ -15,8 +15,11 @@ RUN set -x \
 	&& apt-get purge -y --auto-remove libldap2-dev
   ````
   
-  To build the images just run:
+  To build the image just run:
   
   ````
   docker build -t [username]/[imagename] .
   ````
+
+  # Thanx to dalareo for his inspiration.
+  
