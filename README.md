@@ -1,5 +1,5 @@
-# Docker image of Wordpress with LDAP support
-This images stays up to date with the original one but with LDAP support
+# Docker image of Wordpress (Tag php7.1) with LDAP support
+This images stays up to date with the original one but with LDAP support.
 
 Just added this code snippet as suggested by https://github.com/tianon, Wordpress official image mantainer:
 
